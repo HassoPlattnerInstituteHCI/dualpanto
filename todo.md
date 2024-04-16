@@ -11,6 +11,7 @@ These are the issues that we observed in class last year and do not know the cau
 - “switch to” didn't work in some cases (might be an issue with student's unity implementation)
 - some computers cannot detect/communicate with dualPanto, while the same dualPanto works with other computers
 - obstacles don't clear up after switching levels
+- the firmware should be uploaded from the same computer running Unity. Otherwise, a user feels a force from all directions (feels like put finger in honey) after touching wall or force field
 
 ## The Faulty PCBs
 We also had 11 broken PCBs and these are their current states:
