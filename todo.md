@@ -3,15 +3,25 @@
 These are the issues that we observed in class last year and do not know the cause and how to fix (in decreasing severity):
 
 - does not connect reliably (when this happens, 40-80% of the times when Unity starts, dualPanto fails to connect)
+    - tackled by Martin (checked on Mac, need to check on Windows)
 - disconnects after pushing hard into an obstacle
+    - pcb level, sounds like a power surge issues **@Rob**
 - disconnects after turning on the power
+    - pcb level, sounds like a power surge issues **@Rob**
 - obstacles do not render when there are too many obstacles
+    - firmware or unity framework 
 - having moving obstacles that enclose the godObject and pushing it makes it unreliable
+    - either unity or firmware – no clue where exactly to look
 - “sliding” sensation when touching corner of a cube
+    - physics part of the firmware **@Rob?**
 - “switch to” didn't work in some cases (might be an issue with student's unity implementation)
+    - unity framework (maybe fixed by Martin, need to check) 
 - some computers cannot detect/communicate with dualPanto, while the same dualPanto works with other computers
+    - USB drivers do not work : **how many computers (percentage) where affected by this?**
 - obstacles don't clear up after switching levels
-- the firmware should be uploaded from the same computer running Unity. Otherwise, a user feels a force from all directions (feels like put finger in honey) after touching wall or force field
+    - unity framework, is this implemented? 
+- the firmware should be uploaded from the same computer running Unity. Otherwise, a user feels drag (feels like putting finger in honey) after touching a wall or force field
+    - better way to solve?
 
 ## The Faulty PCBs
 We also had 11 broken PCBs and these are their current states:
@@ -26,21 +36,22 @@ We also had 11 broken PCBs and these are their current states:
 ## More possible DFMA points
 There are also some possible DFMA points to improve on, which will help us avoid issues with the hardware and fix them more easily
 
-- LED to indicate the state of the firmware/ESP32
-- easier way to mount and solder the motors (now it requires many steps and soldering positions that are hard to reach; also, replacing motors requires everything to be taken out)
+- LED to indicate the state of the firmware/ESP32 **@Rob**
+- easier way to mount and solder the motors (now it requires many steps and soldering positions that are hard to reach; also, replacing motors requires everything to be taken out) **@Rob**
 - address the polarity of the motors (maybe use DIP switches or modify the motor to be foolproof)
 - replacing/fixing the linkages requires the whole device to be taken out of the casing
 - linkage bearing assembly: current design needs tweaking after assembly to act smoothly; it might have also led to mechanical issues with the haptics
-- ribbon cables connecting to the handles have a pair of flipped wires due to different versions of the geared motors
+- ribbon cables connecting to the handles have a pair of flipped wires due to different versions of the geared motors **@Rob**
 - better way to zero the position of the handles; current process: move handles back to original position and then pressing reset button
-- calibrate handle orientation: Patrick proposes adding gamified calibration routines that appear to be part of the (shooting) game. 
+- calibrate handle orientation: Patrick proposes adding gamified calibration routines that appear to be part of the (shooting) game
 
 
 ## Debugging Tools
 
 0. More debuggable PCB design (in v5, each component can be swapped and tested)
+- separate esp32 part with the other, resulting in 3 PCBs **@Rob**
 
-1. **Firmware** to test PCB (testing both with and without battery) to check if
+2. **Firmware** to test PCB (testing both with and without battery) to check if
 
 - firmware uploads
 - esp32 turns on
