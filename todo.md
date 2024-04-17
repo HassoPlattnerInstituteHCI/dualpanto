@@ -4,9 +4,9 @@ These are the issues that we observed in class last year and do not know the cau
 
 - does not connect reliably (when this happens, 40-80% of the times when Unity starts, dualPanto fails to connect)
     - tackled by Martin (checked on Mac, need to check on Windows)
-- disconnects after pushing hard into an obstacle
+- disconnects (sometimes) after pushing hard into an obstacle
     - pcb level, sounds like a power surge issues **@Rob**
-- disconnects after turning on the power
+- disconnects (sometimes) after turning on the power
     - pcb level, sounds like a power surge issues **@Rob**
 - obstacles do not render when there are too many obstacles
     - firmware or unity framework 
