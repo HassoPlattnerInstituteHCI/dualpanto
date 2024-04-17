@@ -22,6 +22,8 @@ These are the issues that we observed in class last year and do not know the cau
     - unity framework, is this implemented? 
 - the firmware should be uploaded from the same computer running Unity. Otherwise, a user feels drag (feels like putting finger in honey) after touching a wall or force field
     - better way to solve?
+- movingObstacle in unity: when the obstacle moves in the direction of the handle and goes into it, the handle gets "trapped" in the obstacle, i.e. you feel the inside of the obstacle; and when it moves away, you're free again
+    - 
 
 ## The Faulty PCBs
 We also had 11 broken PCBs and these are their current states:
