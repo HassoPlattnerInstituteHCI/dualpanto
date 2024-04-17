@@ -80,4 +80,5 @@ P.s The ESP chip (ESP32-WROOM-32(M103QH2800PH3Q0)) we were using is now at the �
 P.p.s we may want to add an LED on the PCB to help with testing/debugging/validation. Moreover, might we need test jigs?
 
 ## Other non-device related things
-The BPM team had audio queue up… is there a way to clear out the audio queue? Voice over should maybe be in German, so Silya Korn can understand?
+- The BPM team had audio queue up… is there a way to clear out the audio queue? 
+- Voice over should maybe be in German, so Silya Korn can understand?
