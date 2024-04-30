@@ -2,8 +2,6 @@
 ## Unreliable Instances
 These are the issues that we observed in class last year and do not know the cause and how to fix (in decreasing severity):
 
-- does not connect reliably (when this happens, 40-80% of the times when Unity starts, dualPanto fails to connect)
-    - tackled by Martin (checked on Mac, need to check on Windows)
 - disconnects (sometimes) after pushing hard into an obstacle
     - pcb level, sounds like a power surge issues **@Rob**
 - disconnects (sometimes) after turning on the power
@@ -23,7 +21,8 @@ These are the issues that we observed in class last year and do not know the cau
 - the firmware should be uploaded from the same computer running Unity. Otherwise, a user feels drag (feels like putting finger in honey) after touching a wall or force field
     - better way to solve?
 - movingObstacle in unity: when the obstacle moves in the direction of the handle and goes into it, the handle gets "trapped" in the obstacle, i.e. you feel the inside of the obstacle; and when it moves away, you're free again
-    - 
+- ~~does not connect reliably (when this happens, 40-80% of the times when Unity starts, dualPanto fails to connect)~~
+    - tackled by Martin (checked on Mac, need to check on Windows)
 
 ## The Faulty PCBs
 We also had 11 broken PCBs and these are their current states:
