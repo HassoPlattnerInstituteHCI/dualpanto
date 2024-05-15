@@ -29,6 +29,7 @@ These are the issues that we observed in class last year and do not know the cau
     - passing through wall
 - encoder value sometimes randomly increase nearly one frame (need to check it's one frame or not first)
 - don't actuate (1)when low battery, (2) out of working region
+- switchTo is _sometime_ slow. Shohei feels it's related to coummunication layer, because when I run switchTo, dualpanto is disconect milisecond
 
 ## The Faulty PCBs
 We also had 11 broken PCBs and these are their current states:
