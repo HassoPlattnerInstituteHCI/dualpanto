@@ -23,6 +23,11 @@ These are the issues that we observed in class last year and do not know the cau
 - movingObstacle in unity: when the obstacle moves in the direction of the handle and goes into it, the handle gets "trapped" in the obstacle, i.e. you feel the inside of the obstacle; and when it moves away, you're free again
 - ~~does not connect reliably (when this happens, 40-80% of the times when Unity starts, dualPanto fails to connect)~~
     - tackled by Martin (checked on Mac, need to check on Windows)
+- syncing issue between dualpanto and unity sometimes when a user need to input COM port to pop up window inside of app
+- glitch
+    - sliding wall when interacting with diagnal line
+    - passing through wall
+- encoder value sometimes randomly increase nearly one frame (need to check it's one frame or not first)
 
 ## The Faulty PCBs
 We also had 11 broken PCBs and these are their current states:
