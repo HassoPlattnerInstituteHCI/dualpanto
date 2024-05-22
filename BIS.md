@@ -2,7 +2,7 @@ This is the instruction for last half of BIS lecture. If you have any trouble fo
 
 If you can not solve it, please describe the trouble to **BIS discord (general channel)**. This is important because most of person tend to get same type of issue. If everyone can share the trouble and solution,  it is fast to solve the trouble you have.
 
-# Pre-Installation
+# #0 Pre-Installation
 Before uploading dualpantofirmware, please install and setup following things
 
 ## Install the ESP32 driver
@@ -29,7 +29,7 @@ Please follow the respective instruction.
 - [CLion user](https://www.jetbrains.com/help/clion/platformio.html)
 
 
-# Firmware Uploading
+# #1 Firmware Uploading
 First, clone dualpantoframework (=firmware + hardware setup)
 
 `git clone git@github.com:HassoPlattnerInstituteHCI/dualpantoframework.git`
@@ -41,20 +41,30 @@ go `/dualpantoframework` (_not_ `/dualpantoframework/firmware`)
 then
 `npm run script config`
 
+
 This converts each version's hardware config file written in json into .hpp and .cpp file in firmware.
 
 ## Upload Firmware
-If you have trouble in Please follow the respective instruction.
+Please follow the respective instruction.
 - [VS code user](https://docs.platformio.org/en/latest/integration/ide/vscode.html)
 - [CLion user](https://www.jetbrains.com/help/clion/platformio.html)
 
+This is rough summary for VScode.
+![platformio](images/platformio.png)
+
+please keep pressing the following button when uploading the firmware to dualpanto. (for some pc, it works without pushing the button, but we don't know why).
+![dualpanto_switch](images/dualpanto_switch.jpg)
+
+If you have trouble yet, check [here](https://hpi.de/baudisch/dokuwiki/building-interactive-systems-ss2024/setup/dp-firmware).
+
 more information: [dualpantoframework](https://github.com/HassoPlattnerInstituteHCI/dualpantoframework) 
 
-# Testing Dualpanto
+# #2 Testing Dualpanto (Hardware and Communication)
 Once you have (or feel) trouble in dualpanto devices, check hardware, and communication protocol with
 [dualpanto-testing](https://github.com/HassoPlattnerInstituteHCI/dualpanto-testing). you can see the documentation at this repo.
 
-# Unity
+# #3 Unity
+check [unity-dualpanto-toolkit](https://github.com/HassoPlattnerInstituteHCI/unity-dualpanto-toolkit)
 
 
 # Troubleshooting
