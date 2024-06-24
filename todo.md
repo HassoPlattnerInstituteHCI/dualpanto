@@ -5,7 +5,9 @@ These are the issues that we observed in class last year and do not know the cau
 - disconnects (sometimes) after pushing hard into an obstacle
     - pcb level, sounds like a power surge issues **@Rob**
 - disconnects (sometimes) after turning on the power
-    - pcb level, sounds like a power surge issues **@Rob**
+    - pcb level, sounds like a power surge issues **@Rob**'
+- clipping through a wall when pushing downwards for ~2 seconds
+    - god object ends up outside the corridor
 - obstacles do not render when there are too many obstacles
     - firmware or unity framework 
 - having moving obstacles that enclose the godObject and pushing it makes it unreliable
