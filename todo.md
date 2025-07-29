@@ -1,7 +1,7 @@
 # DualPanto issues and plans
 
 ## todo
-- fix handle rotation issue after median filter fix
+- ~~fix handle rotation issue after median filter fix~~
 - unity dialog to choose COM port does not work (disable or fix)
 - disable motors if battery level under x -> check with Martin and test
 
